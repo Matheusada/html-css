@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personalizando Links</title>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    a{
+      color:#ff0000;
+      text-decoration:none;
+      font-weight: bold;
+    }
+    /*Visited é uma pseudoclasse, marca no caso como darkred o que foi visitado !*/
+    a:visited{
+      color: darkred;
+    }
+    a:hover{
+      color:black;
+      text-decoration: underline;
+    }
+  a:active{
+    color:yellow;
+  }
+  /* Se eu quiser que todo link tenha uma indicação que no final seja um link*/
+  
+  a::before{
+    content: '→ ';
+  }
+ 
+  a::after{
+    content: ' ←' ;
+  }
+  </style>
+</head>
+<body>
+  <h1>Personalizando listas</h1>
+  <ul>
+    <li><a href="https://github.com/Matheusada" target= _blank >Repositório GitHub</a></li>
+    <li><a href="https://youtube.com/cursoemvideo/">Canal do YouTube</a></li>
+    <li><a href="https://www.cursoemvideo.com">Site do CursoemVideo</a></li>
+  </ul>
+  
+</body>
+</html>
