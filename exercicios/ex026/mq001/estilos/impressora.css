@@ -14,6 +14,9 @@ html{
 menu{
     display: none; /*Como não faz sentido aparecer o Menu na impressão, tiramos ele */
 }
+article{
+    width: 100%;
+}
 article::after{
     content: 'Esse artigo foi impresso através do site www.cursoemvideo.com';
 }

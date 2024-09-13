@@ -23,6 +23,13 @@ menu ul {
     background-color: grey;
 }
 menu li {
+    background-color: rgb(66, 66, 66);
+    color: white;
     display: inline-block;
     padding: 10px;   
+}
+article {
+    width:600px;
+    display: block;
+    margin:auto;
 }
